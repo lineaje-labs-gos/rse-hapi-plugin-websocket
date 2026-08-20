@@ -1,48 +1,58 @@
 {
-    "name":        "hapi-plugin-websocket",
-    "version":     "2.4.11",
-    "description": "HAPI plugin for seamless WebSocket integration",
-    "keywords":    [ "hapi", "plugin", "websocket" ],
-    "main":        "./hapi-plugin-websocket.js",
-    "types":       "./hapi-plugin-websocket.d.ts",
-    "license":     "MIT",
-    "repository": {
-        "type": "git",
-        "url":  "git+https://github.com/rse/hapi-plugin-websocket.git"
-    },
-    "author": {
-        "name":  "Dr. Ralf S. Engelschall",
-        "email": "rse@engelschall.com",
-        "url":   "http://engelschall.com"
-    },
-    "homepage": "https://github.com/rse/hapi-plugin-websocket",
-    "bugs":     "https://github.com/rse/hapi-plugin-websocket/issues",
-    "peerDependencies": {
-        "@hapi/hapi":              ">=18.0.0"
-    },
-    "dependencies": {
-        "urijs":                   "1.19.11",
-        "@hapi/hoek":              "11.0.7",
-        "@hapi/boom":              "10.0.1",
-        "@hapi/podium":            "5.0.2",
-        "ws":                      "8.18.1",
-        "websocket-framed":        "1.2.9",
-        "@types/node":             "22.14.1",
-        "@types/ws":               "8.18.1"
-    },
-    "devDependencies": {
-        "@hapi/hapi":              "21.4.0",
-        "@hapi/basic":             "7.0.2",
-        "eslint":                  "8.57.0",
-        "eslint-config-standard":  "17.1.0",
-        "eslint-plugin-import":    "2.31.0",
-        "eslint-plugin-node":      "11.1.0"
-    },
-    "engines": {
-        "node":                    ">=12.0.0"
-    },
-    "scripts": {
-        "prepublishOnly":          "eslint --config eslint.yaml hapi-plugin-websocket.js sample-server.js",
-        "test":                    "node sample-server.js"
+  "name": "hapi-plugin-websocket",
+  "version": "2.4.11-lineaje-01",
+  "description": "HAPI plugin for seamless WebSocket integration",
+  "keywords": [
+    "hapi",
+    "plugin",
+    "websocket"
+  ],
+  "main": "./hapi-plugin-websocket.js",
+  "types": "./hapi-plugin-websocket.d.ts",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Lineaje DepFixer",
+      "email": "221268890+Lineaje-DepFixer@users.noreply.github.com"
     }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lineaje-labs-gos/rse-hapi-plugin-websocket"
+  },
+  "author": {
+    "name": "Dr. Ralf S. Engelschall",
+    "email": "rse@engelschall.com",
+    "url": "http://engelschall.com"
+  },
+  "homepage": "https://github.com/rse/hapi-plugin-websocket",
+  "bugs": "https://github.com/rse/hapi-plugin-websocket/issues",
+  "peerDependencies": {
+    "@hapi/hapi": ">=18.0.0"
+  },
+  "dependencies": {
+    "urijs": "1.19.11",
+    "@hapi/hoek": "11.0.7",
+    "@hapi/boom": "10.0.1",
+    "@hapi/podium": "5.0.2",
+    "ws": "8.18.1",
+    "websocket-framed": "1.2.9",
+    "@types/node": "22.14.1",
+    "@types/ws": "8.18.1"
+  },
+  "devDependencies": {
+    "@hapi/hapi": "21.4.0",
+    "@hapi/basic": "7.0.2",
+    "eslint": "8.57.0",
+    "eslint-config-standard": "17.1.0",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-node": "11.1.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "prepublishOnly": "eslint --config eslint.yaml hapi-plugin-websocket.js sample-server.js",
+    "test": "node sample-server.js"
+  }
 }

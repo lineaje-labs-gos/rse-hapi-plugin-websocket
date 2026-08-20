@@ -35,7 +35,7 @@
     "@hapi/hoek": "11.0.7",
     "@hapi/boom": "10.0.1",
     "@hapi/podium": "5.0.2",
-    "ws": "8.18.1",
+    "ws": ">=8.21.3",
     "websocket-framed": "1.2.9",
     "@types/node": "22.14.1",
     "@types/ws": "8.18.1"
@@ -54,5 +54,11 @@
   "scripts": {
     "prepublishOnly": "eslint --config eslint.yaml hapi-plugin-websocket.js sample-server.js",
     "test": "node sample-server.js"
+  },
+  "overrides": {
+    "ws": ">=8.21.3"
+  },
+  "resolutions": {
+    "ws": ">=8.21.3"
   }
 }
